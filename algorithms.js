@@ -10,18 +10,19 @@
 //   return parseInt(str);
 // }
 
+// Consider an array of sheep where some sheep may be missing from their place. We need a function that counts the number of sheep present in the array (true means present).
 function countSheeps(arrayOfSheep) {
-  const arrayToCount = [
-    true, true, true, false,
-    true, true, true, true,
-    true, false, true, false,
-    true, false, false, true,
-    true, true, true, true,
-    false, false, true, true
-  ];
-
-  const result = arrayToCount.filter(i => i === true).length;
+  const result = arrayOfSheep.filter(i => i === true).length;
   console.log('number of the found elements: ' + result);
 }
 
-countSheeps();
+var arr = [
+  true, true, true, false,
+  true, true, true, true,
+  true, false, true, false,
+  true, false, false, true,
+  true, true, true, true,
+  false, false, true, true
+]
+
+countSheeps(arr);

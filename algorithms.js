@@ -36,3 +36,19 @@ countSheeps(arr);
 
 // OR
 const opposite = number => -number;
+
+// finding The sum of 2 integers, BUT without using the operators + and -
+// ES6
+const getSum = (x, y) => y ? getSum(x ^ y, (x & y) << 1) : x;
+getSum(5, 9)
+
+// Other ways
+function add(x, y)
+{
+  if (y == 0) {
+    return x;
+  } else {
+    return add(x ^ y, (x & y) << 1)
+  }    
+}
+add(5, 9)

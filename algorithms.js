@@ -33,11 +33,30 @@
 // }
 // describeAge(12)
 
-function nextInLine(arr, item) {
-  arr.push(item);
-  var res = arr.shift();
+// Write a function nextInLinewhich takes an array (arr) and a number (item) as arguments.
 
-  return res;  // Change this line
-}
-console.log(nextInLine([1, 2, 3, 4, 5], 1));
+// Add the number to the end of the array, then remove the first element of the array.
+
+// The nextInLinefunction should then return the element that was removed.
+
+// function nextInLine(arr, item) {
+//   arr.push(item);
+//   var res = arr.shift();
+
+//   return res;  // Change this line
+// }
+// console.log(nextInLine([1, 2, 3, 4, 5], 1));
 // console.log(nextInLine(res));
+
+relocation = function (position) {
+  if (position === "no-coding") {
+    console.log("No thanks.")
+  } else if (position === "coding all day") {
+    console.log("I am IN!")
+  } else {
+    console.log("1 2 3, living la vida LOCA")
+  }
+}
+
+relocation();
+

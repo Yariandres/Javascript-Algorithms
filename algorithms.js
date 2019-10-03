@@ -48,15 +48,15 @@
 // console.log(nextInLine([1, 2, 3, 4, 5], 1));
 // console.log(nextInLine(res));
 
-relocation = function (position) {
-  if (position === "no-coding") {
-    console.log("No thanks.")
-  } else if (position === "coding all day") {
-    console.log("I am IN!")
-  } else {
-    console.log("1 2 3, living la vida LOCA")
-  }
-}
+// relocation = function (position) {
+//   if (position === "no-coding") {
+//     console.log("No thanks.")
+//   } else if (position === "coding all day") {
+//     console.log("I am IN!")
+//   } else {
+//     console.log("1 2 3, living la vida LOCA")
+//   }
+// }
 
-relocation();
-
+// relocation();
+// https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/basic-javascript/comparison-with-the-inequality-operator

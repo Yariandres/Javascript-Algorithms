@@ -60,3 +60,26 @@
 
 // relocation();
 // https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/basic-javascript/comparison-with-the-inequality-operator
+
+
+// Create a function using closures
+var budgetController = (function () {
+  var x = 23;
+
+  var add = function (a) {
+    return x + a;
+  }
+
+  //  creating the closure
+  return {
+    publicTest: function (b) {
+      console.log(add(b))
+    }
+  }
+})();
+
+// returns undefine
+// budgetController.add(5);
+
+//  returns 28
+budgetController.publicTest(5);

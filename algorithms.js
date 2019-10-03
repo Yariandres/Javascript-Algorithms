@@ -27,39 +27,17 @@
 
 // countSheeps(arr);
 
-function describeAge(age) {
-  return (age <= 12 ? "You're a(n) kid" : "You're a(n) teenager")
-  console.log(age)
-}
-describeAge(12)
-
-<<<<<<< HEAD
-=======
-countSheeps(arr);
-
-// Very simple, given a number, find its opposite.
-// function opposite(number) {
-//   return(-number)
+// function describeAge(age) {
+//   return (age <= 12 ? "You're a(n) kid" : "You're a(n) teenager")
+//   console.log(age)
 // }
+// describeAge(12)
 
-// opposite(400)
+function nextInLine(arr, item) {
+  arr.push(item);
+  var res = arr.shift();
 
-// OR
-const opposite = number => -number;
-
-// finding The sum of 2 integers, BUT without using the operators + and -
-// ES6
-const getSum = (x, y) => y ? getSum(x ^ y, (x & y) << 1) : x;
-getSum(5, 9)
-
-// Other ways
-function add(x, y)
-{
-  if (y == 0) {
-    return x;
-  } else {
-    return add(x ^ y, (x & y) << 1)
-  }    
+  return res;  // Change this line
 }
-add(5, 9)
->>>>>>> 041345f08d78a964611f144d18a427d7ea76e69a
+console.log(nextInLine([1, 2, 3, 4, 5], 1));
+// console.log(nextInLine(res));

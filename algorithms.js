@@ -63,23 +63,97 @@
 
 
 // Create a function using closures
-var budgetController = (function () {
-  var x = 23;
+// var budgetController = (function () {
+//   var x = 23;
 
-  var add = function (a) {
-    return x + a;
-  }
+//   var add = function (a) {
+//     return x + a;
+//   }
 
-  //  creating the closure
-  return {
-    publicTest: function (b) {
-      console.log(add(b))
-    }
-  }
-})();
+//   //  creating the closure
+//   return {
+//     publicTest: function (b) {
+//       console.log(add(b))
+//     }
+//   }
+// })();
 
 // returns undefine
 // budgetController.add(5);
 
 //  returns 28
-budgetController.publicTest(5);
+// budgetController.publicTest(5);
+
+// var names = ["Hole-in-one!", "Eagle", "Birdie", "Par", "Bogey", "Double Bogey", "Go Home!"];
+
+// function golfScore(par, strokes) {
+//   // Only change code below this line
+//   if (strokes >= par + 3) {
+//     return names[6];
+
+//   } else if (strokes <= par + 1) {
+//     return names[4];
+
+//   } else if (strokes = par + 2) {
+//     return names[5];
+
+//   } else if (strokes = par - 1) {
+//     return names[2];
+//   }
+// }
+// // Change these values to test
+// console.log(golfScore(4, 3));
+
+// var count = 0;
+
+// function cc(card) {
+//   // Only change code below this line
+//   switch (card) {
+//     case 2:
+//     case 3:
+//     case 4:
+//     case 5:
+//     case 6:
+//       count++;
+//       return count + " Bet";
+//       break;
+
+//     case 7:
+//     case 8:
+//     case 9:
+//       count = 0;
+//       return count + " Hold";
+//       break;
+
+//     case 10:
+//     case 'J':
+//     case 'Q':
+//     case 'K':
+//     case 'A':
+//       count--;
+//       return count + " Hold";
+//   }
+
+//   return count;
+//   // Only change code above this line
+// }
+
+// // Add/remove calls to test your function.
+// // Note: Only the last will display
+// console.log(cc(2));
+// console.log(cc(3));
+// console.log(cc(7));
+// console.log(cc('K'));
+// console.log(cc('A'));
+
+var someObj = {
+  propName: "John"
+};
+
+function propPrefix(str) {
+  var s = "prop";
+  return s + str;
+}
+var someProp = propPrefix("Name"); // someProp now holds the value 'propName'
+
+console.log(someObj[someProp]); // "John"

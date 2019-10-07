@@ -146,14 +146,14 @@
 // console.log(cc('K'));
 // console.log(cc('A'));
 
-var someObj = {
-  propName: "John"
-};
+// var someObj = {
+//   propName: "John"
+// };
 
-function propPrefix(str) {
-  var s = "prop";
-  return s + str;
-}
-var someProp = propPrefix("Name"); // someProp now holds the value 'propName'
+// function propPrefix(str) {
+//   var s = "prop";
+//   return s + str;
+// }
+// var someProp = propPrefix("Name"); // someProp now holds the value 'propName'
 
-console.log(someObj[someProp]); // "John"
+// console.log(someObj[someProp]); // "John"

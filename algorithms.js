@@ -157,3 +157,22 @@
 // var someProp = propPrefix("Name"); // someProp now holds the value 'propName'
 
 // console.log(someObj[someProp]); // "John"
+
+
+// Convert the switch statement into an object called lookup. Use it to look up valand assign the associated string to the resultvariable.
+function phoneticLookup(val) {
+
+  var lookup = {
+    alpha: "Adams",
+    bravo: "Boston",
+    charlie: "Chicago",
+    delta: "Denver",
+    echo: "Easy",
+    foxtrot: "Frank"
+  }
+  result = lookup[val];
+
+  return result;
+}
+
+phoneticLookup("charlie");

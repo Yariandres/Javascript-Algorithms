@@ -146,6 +146,11 @@
 // console.log(cc('K'));
 // console.log(cc('A'));
 
+
+
+// **************** OBJECTS *****************
+
+
 // var someObj = {
 //   propName: "John"
 // };
@@ -160,19 +165,39 @@
 
 
 // Convert the switch statement into an object called lookup. Use it to look up valand assign the associated string to the resultvariable.
-function phoneticLookup(val) {
+// function phoneticLookup(val) {
 
-  var lookup = {
-    alpha: "Adams",
-    bravo: "Boston",
-    charlie: "Chicago",
-    delta: "Denver",
-    echo: "Easy",
-    foxtrot: "Frank"
+//   var lookup = {
+//     alpha: "Adams",
+//     bravo: "Boston",
+//     charlie: "Chicago",
+//     delta: "Denver",
+//     echo: "Easy",
+//     foxtrot: "Frank"
+//   }
+//   result = lookup[val];
+
+//   return result;
+// }
+
+// phoneticLookup("charlie");
+
+
+// Setup
+var myObj = {
+  gift: "pony",
+  pet: "kitten",
+  bed: "sleigh"
+};
+
+function checkObj(checkProp) {
+  // Your Code Here
+  if (myObj.hasOwnProperty(checkProp) == true) {
+    return myObj[checkProp];
+  } else {
+    return "Not Found";
+
   }
-  result = lookup[val];
-
-  return result;
 }
-
-phoneticLookup("charlie");
+// Test your code by modifying these values
+console.log(checkObj("bed"));

@@ -184,20 +184,82 @@
 
 
 // Setup
-var myObj = {
-  gift: "pony",
-  pet: "kitten",
-  bed: "sleigh"
-};
+// var myObj = {
+//   gift: "pony",
+//   pet: "kitten",
+//   bed: "sleigh"
+// };
+// function checkObj(checkProp) {
+//   // Your Code Here
+//   if (myObj.hasOwnProperty(checkProp) == true) {
+//     return myObj[checkProp];
+//   } else {
+//     return "Not Found";
+//   }
+// }
+// // Test your code by modifying these values
+// console.log(checkObj("bed"));
 
-function checkObj(checkProp) {
-  // Your Code Here
-  if (myObj.hasOwnProperty(checkProp) == true) {
-    return myObj[checkProp];
-  } else {
-    return "Not Found";
+
+// var myMusic = [
+//   {
+//     "artist": "Billy Joel",
+//     "title": "Piano Man",
+//     "release_year": 1973,
+//     "formats": [
+//       "CD",
+//       "8T",
+//       "LP"
+//     ],
+//     "gold": true
+//   }
+//   // Add record here
+// ];
+
+// myMusic.album = "Yes Yes";
+// myMusic.title = "Some title";
+// myMusic.release_year = "some release_year";
+// console.log(myMusic);
+
+// Setup
+// var myStorage = {
+//   "car": {
+//     "inside": {
+//       "glove box": "maps",
+//       "passenger seat": "crumbs"
+//     },
+//     "outside": {
+//       "trunk": "jack"
+//     }
+//   }
+// };
+
+// var gloveBoxContents = myStorage["car"].inside["glove box"]; // Change this line
+
+// console.log(gloveBoxContents);
+
+// var myArray = [];
+
+// // Only change code below this line.
+// for (var i = 9; i > 0; i -= 2) {
+//   myArray.push(i);
+// }
+// console.log(myArray)
+
+
+// Modify function multiplyAllso that it multiplies the productvariable by each number in the sub-arrays of arr
+function multiplyAll(arr) {
+  var product = 1;
+
+  for (var i = 0; i < arr.length; i++) {
+    for (var j = 0; j < arr[i].length; j++) {
+      console.log(product = product * arr[i][j]);
+
+    }
 
   }
+
+  return product;
 }
-// Test your code by modifying these values
-console.log(checkObj("bed"));
+
+multiplyAll([[1, 2], [3, 4], [5, 6, 7]]);

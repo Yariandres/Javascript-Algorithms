@@ -33,233 +33,65 @@
 // }
 // describeAge(12)
 
-// Write a function nextInLinewhich takes an array (arr) and a number (item) as arguments.
 
-// Add the number to the end of the array, then remove the first element of the array.
-
-// The nextInLinefunction should then return the element that was removed.
-
-// function nextInLine(arr, item) {
-//   arr.push(item);
-//   var res = arr.shift();
-
-//   return res;  // Change this line
-// }
-// console.log(nextInLine([1, 2, 3, 4, 5], 1));
-// console.log(nextInLine(res));
-
-// relocation = function (position) {
-//   if (position === "no-coding") {
-//     console.log("No thanks.")
-//   } else if (position === "coding all day") {
-//     console.log("I am IN!")
-//   } else {
-//     console.log("1 2 3, living la vida LOCA")
+//Setup
+// var contacts = [
+//   {
+//     "firstName": "Akira",
+//     "lastName": "Laine",
+//     "number": "0543236543",
+//     "likes": ["Pizza", "Coding", "Brownie Points"]
+//   },
+//   {
+//     "firstName": "Harry",
+//     "lastName": "Potter",
+//     "number": "0994372684",
+//     "likes": ["Hogwarts", "Magic", "Hagrid"]
+//   },
+//   {
+//     "firstName": "Sherlock",
+//     "lastName": "Holmes",
+//     "number": "0487345643",
+//     "likes": ["Intriguing Cases", "Violin"]
+//   },
+//   {
+//     "firstName": "Kristian",
+//     "lastName": "Vos",
+//     "number": "unknown",
+//     "likes": ["JavaScript", "Gaming", "Foxes"]
 //   }
-// }
+// ];
 
-// relocation();
-// https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/basic-javascript/comparison-with-the-inequality-operator
+// function lookUpProfile(name, prop) {
+//   // Only change code below this line
+//   for (var i = 0; i < contacts.length; i++) {
 
-
-// Create a function using closures
-// var budgetController = (function () {
-//   var x = 23;
-
-//   var add = function (a) {
-//     return x + a;
-//   }
-
-//   //  creating the closure
-//   return {
-//     publicTest: function (b) {
-//       console.log(add(b))
+//     if (contacts[i].firstName === name) {
+//       if (contacts[i].hasOwnProperty(prop)) {
+//         return contacts[i][prop];
+//       }
+//     } else {
+//       return "No such contact";
 //     }
-//   }
-// })();
+//   };
 
-// returns undefine
-// budgetController.add(5);
-
-//  returns 28
-// budgetController.publicTest(5);
-
-// var names = ["Hole-in-one!", "Eagle", "Birdie", "Par", "Bogey", "Double Bogey", "Go Home!"];
-
-// function golfScore(par, strokes) {
-//   // Only change code below this line
-//   if (strokes >= par + 3) {
-//     return names[6];
-
-//   } else if (strokes <= par + 1) {
-//     return names[4];
-
-//   } else if (strokes = par + 2) {
-//     return names[5];
-
-//   } else if (strokes = par - 1) {
-//     return names[2];
-//   }
-// }
-// // Change these values to test
-// console.log(golfScore(4, 3));
-
-// var count = 0;
-
-// function cc(card) {
-//   // Only change code below this line
-//   switch (card) {
-//     case 2:
-//     case 3:
-//     case 4:
-//     case 5:
-//     case 6:
-//       count++;
-//       return count + " Bet";
-//       break;
-
-//     case 7:
-//     case 8:
-//     case 9:
-//       count = 0;
-//       return count + " Hold";
-//       break;
-
-//     case 10:
-//     case 'J':
-//     case 'Q':
-//     case 'K':
-//     case 'A':
-//       count--;
-//       return count + " Hold";
-//   }
-
-//   return count;
 //   // Only change code above this line
 // }
 
-// // Add/remove calls to test your function.
-// // Note: Only the last will display
-// console.log(cc(2));
-// console.log(cc(3));
-// console.log(cc(7));
-// console.log(cc('K'));
-// console.log(cc('A'));
+// // Change these values to test your function
+// lookUpProfile("Akira", "likes");
+
+// // Only change code above this line
+// // Change these values to test your function
+// console.log(lookUpProfile("Akira", "likes"));
 
 
-
-// **************** OBJECTS *****************
-
-
-// var someObj = {
-//   propName: "John"
-// };
-
-// function propPrefix(str) {
-//   var s = "prop";
-//   return s + str;
-// }
-// var someProp = propPrefix("Name"); // someProp now holds the value 'propName'
-
-// console.log(someObj[someProp]); // "John"
+// What formula will generate a random number that falls within a range of two specific numbers?
+// Math.floor(Math.random() * (max - min + 1)) + min;
 
 
-// Convert the switch statement into an object called lookup. Use it to look up valand assign the associated string to the resultvariable.
-// function phoneticLookup(val) {
-
-//   var lookup = {
-//     alpha: "Adams",
-//     bravo: "Boston",
-//     charlie: "Chicago",
-//     delta: "Denver",
-//     echo: "Easy",
-//     foxtrot: "Frank"
-//   }
-//   result = lookup[val];
-
-//   return result;
+// function checkSign(num) {
+//   return (num === 0) ? "zero" : (num > 0) ? "positive" : "negative";
 // }
 
-// phoneticLookup("charlie");
-
-
-// Setup
-// var myObj = {
-//   gift: "pony",
-//   pet: "kitten",
-//   bed: "sleigh"
-// };
-// function checkObj(checkProp) {
-//   // Your Code Here
-//   if (myObj.hasOwnProperty(checkProp) == true) {
-//     return myObj[checkProp];
-//   } else {
-//     return "Not Found";
-//   }
-// }
-// // Test your code by modifying these values
-// console.log(checkObj("bed"));
-
-
-// var myMusic = [
-//   {
-//     "artist": "Billy Joel",
-//     "title": "Piano Man",
-//     "release_year": 1973,
-//     "formats": [
-//       "CD",
-//       "8T",
-//       "LP"
-//     ],
-//     "gold": true
-//   }
-//   // Add record here
-// ];
-
-// myMusic.album = "Yes Yes";
-// myMusic.title = "Some title";
-// myMusic.release_year = "some release_year";
-// console.log(myMusic);
-
-// Setup
-// var myStorage = {
-//   "car": {
-//     "inside": {
-//       "glove box": "maps",
-//       "passenger seat": "crumbs"
-//     },
-//     "outside": {
-//       "trunk": "jack"
-//     }
-//   }
-// };
-
-// var gloveBoxContents = myStorage["car"].inside["glove box"]; // Change this line
-
-// console.log(gloveBoxContents);
-
-// var myArray = [];
-
-// // Only change code below this line.
-// for (var i = 9; i > 0; i -= 2) {
-//   myArray.push(i);
-// }
-// console.log(myArray)
-
-
-// Modify function multiplyAllso that it multiplies the productvariable by each number in the sub-arrays of arr
-function multiplyAll(arr) {
-  var product = 1;
-
-  for (var i = 0; i < arr.length; i++) {
-    for (var j = 0; j < arr[i].length; j++) {
-      console.log(product = product * arr[i][j]);
-
-    }
-
-  }
-
-  return product;
-}
-
-multiplyAll([[1, 2], [3, 4], [5, 6, 7]]);
+// console.log(checkSign(0));

@@ -34,7 +34,7 @@
 // describeAge(12)
 
 
-//Setup
+// Setup
 // var contacts = [
 //   {
 //     "firstName": "Akira",
@@ -104,12 +104,14 @@
 //   }
 //   setTimeout(log, 300);
 // }
-// solution
+// SOLUTION
 
-// let i;
-for (let i = 0; i < 3; i++) {
-  const log = () => {
-    console.log(i);
-  }
-  setTimeout(log, 300);
-}
+
+// for (let i = 0; i < 3; i++) {
+//   const log = () => {
+//     console.log(i);
+//   }
+//   setTimeout(log, 300);
+// }
+
+

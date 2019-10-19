@@ -95,3 +95,21 @@
 // }
 
 // console.log(checkSign(0));
+
+// Fix to return 123 instead of 333
+// let i;
+// for (i = 0; i < 3; i++) {
+//   const log = () => {
+//     console.log(i);
+//   }
+//   setTimeout(log, 300);
+// }
+// solution
+
+// let i;
+for (let i = 0; i < 3; i++) {
+  const log = () => {
+    console.log(i);
+  }
+  setTimeout(log, 300);
+}
